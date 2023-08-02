@@ -5,7 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="/Base.css" />
     <link rel="stylesheet" href="/Grid.css" />
+    <style>
+      .container {
+        display: grid;
+        /* rows / column */
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        gap: 3px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
 </html>
